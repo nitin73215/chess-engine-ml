@@ -1,0 +1,15 @@
+# Exclude datasets, generated training artifacts, and binaries if files are added later.
+*.pgn
+*.pgn.zst
+*.bin
+*.pt
+*.pth
+*.npz
+*.mmap
+*.ubj
+*.rtbw
+*.rtbz
+*.zip
+__pycache__/
+.venv/
+.env
