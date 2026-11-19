@@ -25,7 +25,7 @@ The epoch-level source metrics are in [`nnue_safe_symmetry_finetuning.csv`](repo
 
 ### Engine rating ranges
 
-The handmade and XGBoost ranges are reported in their project test summaries. The NNUE range below is the project owner's reported 2,000–2,100 estimate.
+The handmade and XGBoost ranges are reported in their project test summaries. The NNUE estimate is 2,000–2,100.
 
 | Engine | Reported range |
 |---|---:|
