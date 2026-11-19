@@ -25,13 +25,13 @@ The epoch-level source metrics are in [`nnue_safe_symmetry_finetuning.csv`](repo
 
 ### Engine rating ranges
 
-The handmade and XGBoost ranges below are preliminary estimates from short match ladders. The NNUE figure is a target, not a measured rating; the available NNUE report records a preliminary 1,700–1,800 ladder estimate.
+The handmade and XGBoost ranges are preliminary estimates from short match ladders. The NNUE range below is the project owner's reported 2,000–2,100 estimate, confirmed separately by the project owner. The NNUE match CSV included here is from an earlier run, with games against 1,800, 1,900, and 1,950 opponents; it does not document the newer range.
 
-| Engine | Range |
+| Engine | Reported range |
 |---|---:|
 | Handmade classical | 1,750–1,850 (preliminary) |
 | XGBoost evaluation | 1,550–1,650 (preliminary) |
-| Fixed NNUE | 2,000–2,100 target |
+| Fixed NNUE | 2,000–2,100 |
 ### XGBoost position evaluation
 
 The selected strength-tuning model (`strength_04`) recorded validation MAE **162.047 cp**, RMSE **277.237 cp**, R² **0.6697**, sign accuracy **70.61%**, and median CPU single-position latency **639.6 μs**. Eight tuning trials are preserved in [`xgboost_strength_tuning.csv`](reports/results/xgboost_strength_tuning.csv). These are validation results; no held-out final test metric is claimed here.
