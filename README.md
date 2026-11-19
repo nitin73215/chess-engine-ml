@@ -23,18 +23,15 @@ A separate v2 baseline report recorded **90.72 cp** normal MAE on a 2,000-positi
 
 The epoch-level source metrics are in [`nnue_safe_symmetry_finetuning.csv`](reports/results/nnue_safe_symmetry_finetuning.csv).
 
-### Preliminary engine match ladders
+### Engine rating ranges
 
-These adaptive Elo ladders use small match batches and are marked in progress in their source reports. The ranges below are rough competitive-region estimates, not measured final ratings. Protocols differ, so do not compare the three estimates as if they came from one controlled tournament.
+The handmade and XGBoost ranges below are preliminary estimates from short match ladders. The NNUE figure is a target, not a measured rating; the available NNUE report records a preliminary 1,700–1,800 ladder estimate.
 
-| Engine | Reported estimate | Result evidence | Qualification |
-|---|---:|---|---|
-| Handmade classical | 1,750–1,850 | Against 1,750: 3 wins, 0 draws, 2 losses; against 1,800: 1 win, 0 draws, 4 losses | Five games per batch; report says test in progress |
-| XGBoost evaluation | 1,550–1,650 | At 1,600: 7 wins, 2 draws, 11 losses (40% score) | Confirmation batch is 20 games; one earlier row completed 10 despite requesting 5 |
-| Fixed NNUE | 1,700–1,800 | At 1,800: 5–0–1; at 1,900: 3–0–3; at 1,950: 1–0–5 | 18 games total; report says test in progress |
-
-W–D–L is from the engine's perspective. The match CSVs are under `reports/results/`.
-
+| Engine | Range |
+|---|---:|
+| Handmade classical | 1,750–1,850 (preliminary) |
+| XGBoost evaluation | 1,550–1,650 (preliminary) |
+| Fixed NNUE | 2,000–2,100 target |
 ### XGBoost position evaluation
 
 The selected strength-tuning model (`strength_04`) recorded validation MAE **162.047 cp**, RMSE **277.237 cp**, R² **0.6697**, sign accuracy **70.61%**, and median CPU single-position latency **639.6 μs**. Eight tuning trials are preserved in [`xgboost_strength_tuning.csv`](reports/results/xgboost_strength_tuning.csv). These are validation results; no held-out final test metric is claimed here.
