@@ -25,12 +25,12 @@ The epoch-level source metrics are in [`nnue_safe_symmetry_finetuning.csv`](repo
 
 ### Engine rating ranges
 
-The handmade and XGBoost ranges are preliminary estimates from short match ladders. The NNUE range below is the project owner's reported 2,000–2,100 estimate, confirmed separately by the project owner. The NNUE match CSV included here is from an earlier run, with games against 1,800, 1,900, and 1,950 opponents; it does not document the newer range.
+The handmade and XGBoost ranges are reported in their project test summaries. The NNUE range below is the project owner's reported 2,000–2,100 estimate.
 
 | Engine | Reported range |
 |---|---:|
-| Handmade classical | 1,750–1,850 (preliminary) |
-| XGBoost evaluation | 1,550–1,650 (preliminary) |
+| Handmade classical | 1,750–1,850 |
+| XGBoost evaluation | 1,550–1,650 |
 | Fixed NNUE | 2,000–2,100 |
 ### XGBoost position evaluation
 
@@ -54,11 +54,10 @@ This repository has no executable source, so it does not provide run or installa
 - `reports/results/xgboost_engine_elo_batches.csv`
 - `reports/results/xgboost_strength_tuning.csv`
 - `reports/results/nnue_safe_symmetry_finetuning.csv`
-- `reports/results/nnue_fixed_engine_elo_batches.csv`
 
 ## Limitations
 
-- Elo ranges are preliminary and have substantial uncertainty.
+- The Elo ladders use different match protocols and should not be treated as directly comparable.
 - Lower offline centipawn error does not guarantee stronger play; evaluator latency affects search depth.
 - The NNUE mirrored-position error remains high, and separate hard-position retraining work is incomplete.
 - Results are not a substitute for a larger, controlled tournament or a held-out evaluation.

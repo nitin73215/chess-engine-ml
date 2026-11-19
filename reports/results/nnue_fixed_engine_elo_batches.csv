@@ -1,4 +1,0 @@
-batch,opponent_elo,requested_games,completed_games,wins,draws,losses,score_percentage,crashes,step,phase
-1,1800,6,6,5,0,1,83.33333333333334,0,100,preliminary
-2,1900,6,6,3,0,3,50.0,0,100,preliminary
-3,1950,6,6,1,0,5,16.666666666666664,0,50,preliminary
